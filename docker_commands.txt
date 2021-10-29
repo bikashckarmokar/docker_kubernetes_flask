@@ -21,6 +21,9 @@ docker run python
 # iterative mode
 docker run -it python
 
+# stop a service running in docker
+docker stop container_id
+
 
 
 
