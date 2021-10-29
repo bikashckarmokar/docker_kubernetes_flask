@@ -4,16 +4,14 @@ docker images
 # for showing all the running processes or containers
 docker ps -a
 
+# to see only running containers
+docker ps
+
 # to build a docker image
 docker build .
 
 # build docker image with specific name
 docker build --tag image_name .
-
-
-# running the image and expose to a specific port
-docker run -p 5000:5000 image_id_here_from_the_docker_build
-
 
 # if python is not available in local machine it will download from dockerhub
 docker run python
@@ -21,8 +19,26 @@ docker run python
 # iterative mode
 docker run -it python
 
-# stop a service running in docker
+
+# running the image and expose to a specific port
+# here p means publish
+docker run -p 5000:5000 image_id_here_from_the_docker_build
+
+
+# adding expose, this is optional. its enhance readability for user which port is used for exposing
+EXPOSE port_num
+
+
+# stop a container/service running in docker
 docker stop container_id
+
+# for running or stopping any container to identify containers do not need to write whole name
+# abrztu56ifg
+# the bove can be writen as
+docker run ab, also just docker a, if there are only one container starting with a
+
+
+
 
 
 
