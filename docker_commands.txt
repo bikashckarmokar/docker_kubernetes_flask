@@ -38,6 +38,12 @@ docker stop container_id
 docker run ab, also just docker a, if there are only one container starting with a
 
 
+# optimization tips
+# before copying all files separately copy requirement file and run pip install. so if no packages changed later
+# and only source code changed then those layers will not run during docker build. As we know if any layer change then
+# all the following layers will also run again during docker build. 
+
+
 
 
 
