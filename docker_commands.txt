@@ -62,6 +62,11 @@ docker run ab, also just docker a, if there are only one container starting with
 # also i can use -f to follow the future prints 
 # docker logs -f container_id
 
+# interactive mode
+# -i and -t will help to run a interactive python console app from docker 
+# -t allcates a pseudo tty
+# -t -i can be written as -it also
+
 
 
 
