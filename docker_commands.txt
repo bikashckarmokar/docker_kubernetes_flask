@@ -32,6 +32,9 @@ EXPOSE port_num
 # stop a container/service running in docker
 docker stop container_id
 
+# starting a container after stop it once. It must run once to restart using start
+# docker start container_id
+
 # for running or stopping any container to identify containers do not need to write whole name
 # abrztu56ifg
 # the bove can be writen as
@@ -45,6 +48,19 @@ docker run ab, also just docker a, if there are only one container starting with
 
 
 
+# docker attached and detached mode
+# docker start -a container_id
+# start is by default detach mode. so to attach have to use -a
+# If you started a container in detached mode (i.e. with -d), you can still attach to it afterwards without 
+# restarting the Container with the following command:
+# docker attach container_id
+
+# logs
+# if i run a container in detach mode and want to see the prints then i can use 
+# docker logs container_id
+# this will show all the prints
+# also i can use -f to follow the future prints 
+# docker logs -f container_id
 
 
 
