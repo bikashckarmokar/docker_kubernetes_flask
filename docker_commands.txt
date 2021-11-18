@@ -70,6 +70,29 @@ docker run ab, also just docker a, if there are only one container starting with
 # docker -a -i will solve the problem. -a -i or -ai 
 # in this case docker will just run once and done. docker ps will not show running container for -ai mode in this example
 
+# remove container
+# can not remove running container
+# if an image has container created from it then that image can not be deleted
+
+#  To remove all unused images:
+# docker image prune
+
+# To remove all stopped container:
+# docker container prune
+
+# Remove container automaticall after exit
+# docker run --rm --p container_id
+
+# To learn more about the created image
+# docker image inspect image_id/image_name
+
+
+# copy
+
+
+
+
+
 
 
 
